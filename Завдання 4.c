@@ -8,6 +8,10 @@ int main() {
     printf("Задайте y: ");
     scanf("%f", &y);
     f = (pow(x, 2) + pow(y, 2)) / sqrt(x + y);
+    if (x + y<0) {
+        printf("Не має визначення.");
+        return 0;
+    }
     printf("Значення f = %.2f", f);
     return 0;
 }
